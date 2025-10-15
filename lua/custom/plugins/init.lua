@@ -2,4 +2,14 @@
 --  I promise not to create any merge conflicts in this directory :)
 --
 -- See the kickstart.nvim README for more information
-return {}
+return {
+  -- add dracula
+  { 'Mofiqul/dracula.nvim' },
+
+  -- Configure LazyVim to load dracula
+  {
+    opts = {
+      colorscheme = 'dracula',
+    },
+  },
+}
